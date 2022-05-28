@@ -1,0 +1,495 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    background-color: var(--BodyColor);
+    scroll-behavior: smooth;
+    
+}
+*{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--TextColor); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: var(--LeftSideColor); 
+  } */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+:root{
+    --BodyColor:#e8e8e8;
+    --LeftSideColor:#dcaa31;
+    --RightSideColor:#2d2928;
+    --BoxColor:#3a3a3a;
+    --FirstFontColor:#413b3c;
+    --SecondFontColor:#b6b42d;
+    --TextColor:#747371;
+    
+}
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Merriweather', serif;} */
+/* font-family: 'Bitter', serif; */
+
+
+
+
+.container{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    background-color: var(--RightSideColor);
+
+}
+
+/* start left side */
+.left{
+    width: 30%;
+    height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+    /* padding-top: 2px; */
+
+}
+.left img{
+    width: 100%;
+    height: 230px;
+    border-radius: 0 10px 10px 0;
+}
+.info{
+    background-color: var(--LeftSideColor);
+    padding: 5px 22px;
+    color: var(--FirstFontColor);
+    border-radius: 0 10px 10px 0;
+}
+.info a{
+    color: var(--FirstFontColor);
+}
+.info a:hover{
+    color: blue;
+    font-weight: bold;
+}
+.info h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 39px;
+}
+.info h4{
+    text-align: center;
+    line-height: 1px;
+}
+
+.adress{
+    margin-top:54px ;
+}
+.adress div{
+    margin-bottom: 17px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--RightSideColor);
+    font-size: 13px;
+    font-weight: bold;
+}
+.adress i{
+    padding-right: 10px;
+}
+
+.skils{
+    margin-top: 35px;
+    border-bottom: 2px solid var(--RightSideColor) ;
+}
+
+.main-contaner{
+    /* margin-top: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 17px;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skil-logo{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    border:2px solid var(--RightSideColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skil-logo span{
+    background-color: var(--RightSideColor);
+    padding: 7px;
+    font-size: 18px;
+    color: var(--LeftSideColor);
+}
+
+.skil-name{
+    font-weight: bold;
+    padding-top: 8px;
+}
+.contacts{
+    padding-top: 15px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contacts a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--BoxColor);
+    border:1px solid
+}
+.contacts a:hover{
+    opacity: 0.8;
+    border-color: #ccc;
+}
+
+.contacts i{
+    font-size: 22px;
+    color:#ccc;
+
+}
+
+
+/* end left side */
+
+
+
+.right{
+    width: 70%;
+    height: 100vh;
+    overflow-y: scroll;
+    /* padding: 5px 22px; */
+
+
+}
+.right .aboutMe{
+    padding: 5px 22px;
+}
+.right .aboutMe h1{
+    color: var(--BoxColor);
+    text-align: left;
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.right .aboutMe h3{
+    margin: 0;
+    padding-bottom: 13px;
+    color: var(--LeftSideColor);
+    opacity: 0.5;
+    font-size: 21px;
+}
+
+.right .aboutMe article{
+    color: var(--TextColor);
+    line-height: 28px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+}
+
+.sub-title{
+    color: #d1d1d1;
+    font-size: 35px;
+    margin: 0;
+    padding: 20px 22px;
+    text-transform: uppercase;
+
+}
+
+
+.experience{
+    padding: 20px 22px;
+}
+.exp{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: var(--BoxColor);
+}
+.exp .head{
+    display: flex;
+    justify-content: space-between;
+}
+.jop-title{
+    color:var(--SecondFontColor) ;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.jop-location{
+    color:#e2e0e0 ;
+    font-size: 17px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+
+}
+.period{
+    color:#b1b1b1;
+    font-size: 15px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+
+}
+
+.exp .head .logo img{
+    width: 60px;
+    height: 60px;
+    border:1px solid var(--LeftSideColor);
+    border-radius: 50%;
+}
+.responsipility li{
+    line-height: 24px;
+    color: var(--TextColor);
+    font-weight: bold;
+    list-style:disc;
+}
+
+
+.achivements{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.achives{
+    width: 50%;
+    padding: 16px 22px;
+    position: relative;
+    min-height: 200px;
+}
+.achives div{
+    background-color: var(--BoxColor);
+    padding: 10px;
+    min-height: 350px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 1px rgb(148, 145, 145);
+
+}
+.achives-title{
+    color:var(--SecondFontColor) ;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.achives-langs{
+    color:#e2e0e0 ;
+    font-size: 17px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.achives video{
+    width: 100%;
+    margin-top: 20px;
+    border:1px solid transparent
+}
+.achives p{
+    text-transform: capitalize;
+    color: #d4cece;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 16px;
+}
+.achives .btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 18px;
+    border-radius: 12px;
+    border-style: none;
+    font-weight: bold;
+    box-shadow: 2px 2px gray;
+    background-color: var(--RightSideColor);
+    color:#FFF;
+    z-index: 3;
+    display: none;
+}
+.achives .btn:hover{
+    cursor: pointer;
+    color: #cdf148;
+}
+.achives:hover .btn{
+    display: block;
+}
+.achives:hover video{
+    opacity: 0.7;
+    cursor: pointer;
+    border-color: var(--SecondFontColor);
+}
+
+.achives a{
+    line-height: 3;
+    color: var(--BodyColor);
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.achives a:hover{
+    color: var(--SecondFontColor);
+}
+.certifications{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.cert{
+    width: 50%;
+    padding: 10px 22px;
+    height: 30px;
+    margin-bottom: 39px;
+
+}
+.cert div{
+    background-color: var(--BoxColor);
+    padding: 10px;
+    color: var(--SecondFontColor);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.cert div i{
+    transform: rotate(45deg);
+    padding-right: 10px;
+    font-size: 8px;
+}
+
+.hobbies{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 11px;
+}
+
+.hobbies-contaner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 17px;
+}
+.hobbies-sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobbies-logo{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    border:2px solid var(--LeftSideColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hobbies-logo span{
+    padding: 7px;
+    font-size: 18px;
+    color: var(--LeftSideColor);
+}
+
+.hobbies-name{
+    font-weight: bold;
+    padding-top: 8px;
+    color: var(--LeftSideColor);
+
+}
+
+
+.overLay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter:blur(12px);
+    transition: display 3s;
+    z-index: 5;
+}
+
+.overLayview{
+    display: block;
+}
+.overLay button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    border:1px solid red;
+    border-radius: 8px;
+}
+.overLay button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+.overLay .view1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        width: 70%;
+    }
+    .left, .right{
+        width: 100%;
+        height: auto;
+    }
+    .achives, .cert{
+        width: 100%;
+    }
+    .right .aboutMe h1{
+        font-size: 50px;
+    }
+    .sub-title{
+        font-size: 20px;
+    }
+    .hobbies-name{
+        font-size: 10px;
+    }
+}
