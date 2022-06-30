@@ -44,7 +44,7 @@ li{
     --BoxColor:#3a3a3a;
     --FirstFontColor:#413b3c;
     --SecondFontColor:#b6b42d;
-    --TextColor:#747371;
+    --TextColor:#d4cece;
     
 }
 
@@ -198,7 +198,7 @@ li{
     padding: 5px 22px;
 }
 .right .aboutMe h1{
-    color: var(--BoxColor);
+    color: var(--TextColor);
     text-align: left;
     font-weight: bold;
     font-size: 60px;
